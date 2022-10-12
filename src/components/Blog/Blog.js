@@ -21,9 +21,9 @@ const Blog = () => {
            </div>
         </div>
 
-        <div className='md:ml-20 text-center mb-5'>
+        <div className='md:ml-20 text-center mb-5 md:m-12 '>
             
-            <img src="https://dzone.com/storage/temp/892886-fig1.png" alt="" />
+            <img  src="https://dzone.com/storage/temp/892886-fig1.png" alt="" />
             <h3>React.js Rendering:</h3>
           
             <img src="https://dzone.com/storage/temp/892889-fig2.png" alt="" />
@@ -32,6 +32,59 @@ const Blog = () => {
 
       </div>
 
+      {/* question:2 */}
+
+      <div className="grid md:grid-cols-2 my-12 bg-white rounded-lg border shadow-sm md:mx-20 text-left hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-70">
+
+    <div className='content mx-5 md:m-12'>
+    <h3 className='mb-3 text-lg font-bold mt-5'>What is the difference between state and props?</h3>
+   <div className=' m-auto place-items-start'>
+    <p className='mb-3 font-normal  dark:text-gray-400'>props (short for “properties”) and state are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way:</p>
+
+    <p className='mb-5 font-normal  dark:text-gray-400'><span className='font-semibold text-lg'>State:</span>  The state is an updatable structure that is used to contain data or information about the component and can change over time. The change in state can happen as a response to user action or system event. It is the heart of the react component which determines the behavior of the component and how it will render. A state must be kept as simple as possible. It represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly.</p>
+
+    <p className='mb-5 font-normal  dark:text-gray-400'><span className='font-semibold text-lg'>Props:</span>  Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.</p>
+   
+   </div>
+</div>
+
+<div className='md:ml-20 text-center mb-5 md:mt-20 '>
+    
+    <img  src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/react-states-day-six/Images/image001.png" alt="" />
+  
+</div>
+
+</div>
+
+{/* question-3 */}
+
+<div className="grid md:grid-cols-2 my-12 bg-white rounded-lg border shadow-sm md:mx-20 text-left hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-70">
+
+<div className='content mx-5 md:m-12'>
+<h3 className='mb-3 text-lg font-bold mt-5'>How does Context API work?</h3>
+<div className=' m-auto place-items-start'>
+<p className='mb-3 font-normal  dark:text-gray-400'>Context API works by declaring a global state that can be pulled into any component. Lets see it in action.</p>
+<p className='mb-5'><small >Create a context using React.createContext().</small></p>
+
+<p className='mb-5 font-normal  dark:text-gray-400'> TNext Step is to create a provider class that will pass your value or state. Notice we’re using our ThemeContext.Provider tag to show this is the component that provides context. Now that context can be used by the consumer class.</p>
+
+<p className='mb-5 font-normal  dark:text-gray-400'>Now were are going to import the context in the Content class and use it to do something. Notice we are using ThemeContext.Consumer to import the context into the class.</p>
+
+<p className='mb-5 font-normal  dark:text-gray-400'><span className='font-semibold text-lg'>Conclusion:</span>  Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.</p>
+
+</div>
+</div>
+
+<div className='md:ml-20 md:mr-20 text-center mb-5 md:mt-24 '>
+
+<img  src="https://miro.medium.com/max/828/1*YHoRhY7rQGbW1hzOJHgFFg.png" alt="" />
+
+</div>
+
+</div>
+
+       
+       
         </div>
     );
 };
