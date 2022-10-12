@@ -17,4 +17,4 @@ After finishing my project i deploy it on netlify
 ### `netlify deploy`
 
 Runs the website.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://graceful-conkies-833806.netlify.app/](https://graceful-conkies-833806.netlify.app/) to view it in your browser.
