@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Hero from '../Hero/Hero';
 import Quiz from '../Quiz/Quiz';
 
 const Home = () => {
@@ -8,9 +9,9 @@ const Home = () => {
     return (
        <div>
         
+          <Hero></Hero>
 
-
-         <div className='grid md:grid-cols-4 gap-5 md:my-60 ml-12 items-center '>
+         <div className='grid md:grid-cols-4 gap-5 md:my-20 ml-12 items-center '>
           
           {
              allQuiz.data.map(quiz=> <Quiz key={quiz.id}

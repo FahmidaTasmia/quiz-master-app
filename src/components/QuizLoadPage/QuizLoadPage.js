@@ -6,8 +6,10 @@ const QuizLoadPage = ({query}) => {
     return (
         <div>
             <h3>{question}</h3>
-           
+           <div>
+            
            <p>{options}</p>
+           </div>
         </div>
     );
 };

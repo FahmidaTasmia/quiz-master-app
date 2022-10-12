@@ -83,7 +83,29 @@ const Blog = () => {
 
 </div>
 
-       
+      {/* question-4  */}
+
+<div className="grid md:grid-cols-2 my-12 bg-white rounded-lg border shadow-sm md:mx-20 text-left hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-70">
+
+<div className='content mx-5 md:m-12'>
+<h3 className='mb-3 text-lg font-bold mt-5'>How does useRef work in React?</h3>
+<div className=' m-auto place-items-start'>
+<p className='mb-3 font-normal  dark:text-gray-400'>The useRef hook is the new addition in React 16.8. Before proceeding to this article there is a prerequisite to know about the ref in react.The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. </p>
+<h3 className='my-3  text-lg font-bold'>Syntax:</h3>
+<small   >const refContainer = useRef(initialValue);</small>
+
+<p className='mb-5 mt-5 font-normal  dark:text-gray-400'>The useRef returns a mutable ref object. This object has a property called .current. The value is persisted in the refContainer.current property. These values are accessed from the current property of the returned object. The .current property could be initialised to the passed argument initialValue e.g. useRef(initialValue). The object can persist a value for a full lifetime of the component. </p>
+
+</div>
+</div>
+
+<div className='md:ml-20 md:mr-20 text-center mb-5 md:mt-24 '>
+
+<img  src="https://miro.medium.com/max/917/0*GxY7_gKf_0wyfwUQ.png" alt="" />
+
+</div>
+
+</div>    
        
         </div>
     );
