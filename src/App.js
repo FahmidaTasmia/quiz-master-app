@@ -30,6 +30,7 @@ function App() {
 
       {
         path:'/dashboard',
+        loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
         element:<DashBoard></DashBoard>
       },
 

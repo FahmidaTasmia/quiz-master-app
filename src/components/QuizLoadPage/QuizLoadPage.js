@@ -8,7 +8,14 @@ const QuizLoadPage = ({query}) => {
             <h3>{question}</h3>
            <div>
             
-           <p>{options}</p>
+            {
+               query.options.map((option,_id)=> <QuizOption
+               key ={_id}
+               option={option}
+               >
+            
+               </QuizOption> )
+            }
            </div>
         </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const QuizOption = () => {
+const QuizOption = ({option}) => {
     return (
         <div>
-            
+          <p>{option}</p>
         </div>
     );
 };
