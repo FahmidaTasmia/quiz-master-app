@@ -11,9 +11,9 @@ const Navbar = () => {
            </div>
            <div className='nav-item mr-12 '>
             
-            <Link className='mr-12' to='/'>Home</Link>
+            <Link className='mr-6 md:mr-12 text-sm md:text-lg font-semibold hover:font-bold' to='/'>Home</Link>
             
-            <Link className='mr-12' to='/dashboard'>Statistic</Link>
+            <Link className='mr-6 md:mr-12' to='/dashboard'>Statistic</Link>
             <Link to='/blog'>Blog</Link>
            <Link to='/question'></Link>
 

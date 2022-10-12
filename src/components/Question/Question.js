@@ -9,7 +9,7 @@ const Question = () => {
     const Questions=AllQuestions.data.questions;
     return (
         <div>
-            <h2>Quiz Of: {name}</h2>
+            <h2 className='font-bold text-3xl text-purple-700 py-8'><small>Quiz Of</small>: {name}</h2>
           {
             Questions.map(query=><QuizLoadPage key={query.id}
                 query={query}
