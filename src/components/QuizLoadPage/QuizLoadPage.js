@@ -8,7 +8,7 @@ const QuizLoadPage = ({query}) => {
     const{question,correctAnswer}=query;
 
     const handleClick = (answer)=>{
-        if(answer===question.correctAnswer){
+        if(answer===correctAnswer){
             toast('Nice Job !')
         }
         else{
@@ -28,6 +28,7 @@ const QuizLoadPage = ({query}) => {
             </div>
             <div  className='grid justify-items-end mx-10'>
                 <EyeIcon  onClick={handleEye} className="h-6 w-6 inline-block align-middle text-purple-500"/>
+                
                 <ToastContainer />
             </div>
             
